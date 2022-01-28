@@ -2,4 +2,4 @@
 
 A Hello World Repo
 
-closer to github...
+It will be a repo for C Programming.
