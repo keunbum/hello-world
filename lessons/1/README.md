@@ -15,4 +15,25 @@ $ ./ex1
 
 ## 1.4 try more
 
-* man 3 printf
+* [man 3 printf](https://man7.org/linux/man-pages/man3/printf.3.html)
+  
+  NAME
+
+  SYNOPSIS
+
+  DESCRIPTION
+      
+      The functions in the printf() family produce output according to a format as described below.
+
+      The functions printf(), and vprintf() write output to stdout, the standard output strea;
+
+      fprintf() and vfprintf() write output to the given output stream;
+
+      sprintf(), snprintf(), vsprintf(), and vsnprintf() write to the character string str.
+
+
+      The function dprintf() is the same as fprintf() except that it outputs to a file descriptor, fd, instead of to a stdio(3) stream.
+
+
+      The functions snprintf() and vsnprintf() wirte at most size bytes(including the terminating null byte ('\n')) to str.
+
