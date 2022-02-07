@@ -19,15 +19,20 @@ $ ./ex1
   
   NAME
 
+
   SYNOPSIS
+
 
   DESCRIPTION
       
       The functions in the printf() family produce output according to a format as described below.
 
+
       The functions printf(), and vprintf() write output to stdout, the standard output strea;
 
+
       fprintf() and vfprintf() write output to the given output stream;
+
 
       sprintf(), snprintf(), vsprintf(), and vsnprintf() write to the character string str.
 
@@ -36,4 +41,16 @@ $ ./ex1
 
 
       The functions snprintf() and vsnprintf() wirte at most size bytes(including the terminating null byte ('\n')) to str.
+
+      The functions vprintf(), vfprintf(), vdprintf(), vsprintf(), vsnprintf() are equivalent to
+
+      the functions printf(), fprintf(), dprintf(), sprintf(), snprintf(), respectively,
+
+      except that they are called with a va_list instead of a variable number of arguments.
+
+      These functions do not call the va_end macro.
+
+      Because they invoke the va_arg macro, the value of ap is undefined after the call.  See stdarg(3).
+
+
 

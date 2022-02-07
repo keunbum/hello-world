@@ -4,7 +4,7 @@
 ## 0.1 Linux
 
 ```bash
-# debian
+# Debian
 $ sudo apt install build-essential
 
 # install check
