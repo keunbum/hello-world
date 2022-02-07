@@ -10,9 +10,7 @@ A repo for C Programming training.
 * undefined behavior
 
 Thinking that nothing works properly, and
-
 approaching all programming languages, including C,
-
 with the mindset that we will do our best to avoid errors.
 
 
