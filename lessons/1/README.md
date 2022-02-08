@@ -53,3 +53,15 @@ zero or more *flags*,
 an optional minimum *field width*,
 an optional *precision* and
 an optional *length modifier*.
+
+The overall syntax of a conversion specification is:
+
+	$[$][flags][width][.precision][length modifier]conversion
+
+
+##### Flag characters
+
+The character % is followed by zero or more of the following flags:
+
+	#
+	The value
