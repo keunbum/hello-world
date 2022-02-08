@@ -56,7 +56,7 @@ an optional *length modifier*.
 
 The overall syntax of a conversion specification is:
 
-	$[$][flags][width][.precision][length modifier]conversion
+	%[$][flags][width][.precision][length modifier]conversion
 
 
 ##### Flag characters
@@ -64,4 +64,133 @@ The overall syntax of a conversion specification is:
 The character % is followed by zero or more of the following flags:
 
 	#
-	The value
+	The value should be converted to an "alternate form".
+	For o conversions, the first character of the output string is made zero (by prefixing a 0 if it was not zero already).
+	For x and X conversions, a nonzero result has the string "0x"a(or "0X" for X conversions) prepended to it.
+	For a, A, e, E, f, F, g, and G conversions, the result will always contain a decimal point, even if no ditis follow it
+	(normally, a decimal point appears in the results of those conversions only ifa digit follows). For g and G conversions,
+	trailing zeros are not removed from the result as they would otherwise be.
+	For other conversions, the result is undefined.
+
+	0
+	The value should be zero padded.
+
+	If the 0 and - flags both appear, the 0 flag is ignored.
+	If a precision is given with a numeric conversion (d, i, o, u, x, and X), the 0 flag is ingnored.
+	For other conversions, the behavior is undefined.
+
+	-
+	The converted value is to be left adjusted on the field boundary. (The default is right justification.)
+	The converted value is padded on the right with blanks, rather than on the left with blanks or zeros.
+	A - overrides a 0 if both are given.
+
+	' '
+	(a space) A blank should be left before a positive number (or empty string) produced by a signed conversion.
+
+	+
+	A sign (+ or -) should always be placed before a number produced by a sigend conversion.
+	By default, a sign is used only for negative numbers. A + overrides a space if both are used.
+
+
+##### Field width
+
+An optional decimal digit string (with nonzero first digit) specifying a minimum field width.
+
+
+
+##### Precision
+
+An optional precision, in the form of a period ('.') followed by an optional decimal digit string.
+
+This gives
+the minimum number of digits to appear for d, i, o, u, x, and X conversions,
+the number of digits to appear after the radix character for a, A, e, E, f, and F conversions,
+the maximum number of significant digits for g and G conversions, or
+the maximum number of charactoers to be printed from a string for s and S conversions.
+
+
+##### Length modifier
+
+Here, "integer conversion" stands for d, i, o, u, x, or X conversion.
+
+
+hh
+*signed char* or *unsigned char*
+
+h
+*short* or *unsigned short*
+
+l
+*long* or *unsigned long*
+
+ll
+*long long* or *unsigned long long*
+
+q
+
+L
+A following a, A, e, E, f, F, g, or G conversion corresponds to a *long double* argument.
+
+j
+
+z
+*size_t* or *ssize_t*
+
+Z
+
+t
+
+
+##### Conversion specifiers
+
+A character that specifies the type of conversion to be applied.
+
+
+d, i
+
+
+o, u, x, X
+
+
+e, E
+
+
+f, F
+
+
+g, G
+
+
+a, A
+
+
+c
+
+
+s
+
+
+C
+Don't use.
+
+
+S
+Don't use.
+
+
+p
+The *void * *pointer
+
+
+n
+
+
+m
+
+
+%
+
+
+
+
+#### RETURN VALUE
