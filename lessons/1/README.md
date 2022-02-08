@@ -195,7 +195,7 @@ Don't use.
 
 
 p
-The *void \** pointer
+The *void \** pointer argument is printed in hexadecimal \*(as if by %#x or %Xlx).
 
 
 n
