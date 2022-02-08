@@ -15,15 +15,15 @@ $ ./ex1
 
 ## 1.4 try more
 
-* [man 3 printf](https://man7.org/linux/man-pages/man3/printf.3.html)
+### [man 3 printf](https://man7.org/linux/man-pages/man3/printf.3.html)
   
-### NAME
+#### NAME
 
 
-### SYNOPSIS
+#### SYNOPSIS
 
 
-### DESCRIPTION
+#### DESCRIPTION
 
 The functions in the printf() family produce output according to a format as described below.
 
@@ -45,7 +45,7 @@ These functions do not call the va_end macro.
 Because they invoke the va_arg macro, the value of ap is undefined after the call.  See stdarg(3).
 
 
-#### Format of the format string
+##### Format of the format string
 
 Each conversion specification is introduced by the character %, and ends with a *conversion specifier*.
 In between there may be (in this order)
