@@ -17,13 +17,14 @@ $ ./ex1
 
 * [man 3 printf](https://man7.org/linux/man-pages/man3/printf.3.html)
   
-  NAME
+	NAME
 
 
-  SYNOPSIS
+	SYNOPSIS
 
 
-  DESCRIPTION
+	DESCRIPTION
+
 	        The functions in the printf() family produce output according to a format as described below.
 
 					The functions printf(), and vprintf() write output to stdout, the standard output stream;
