@@ -114,46 +114,46 @@ the maximum number of charactoers to be printed from a string for s and S conver
 Here, "integer conversion" stands for d, i, o, u, x, or X conversion.
 
 
-hh
+* hh
 
 *signed char* or *unsigned char*
 
 
-h
+* h
 
 *short* or *unsigned short*
 
 
-l
+* l
 
 *long* or *unsigned long*
 
 
-ll
+* ll
 
 *long long* or *unsigned long long*
 
  
-q
+* q
 
 
-L
+* L
 
 A following a, A, e, E, f, F, g, or G conversion corresponds to a *long double* argument.
 
 
-j
+* j
 
 
-z
+* z
 
 *size_t* or *ssize_t*
 
 
-Z
+* Z
 
 
-t
+* t
 
 
 ##### Conversion specifiers
@@ -161,12 +161,12 @@ t
 A character that specifies the type of conversion to be applied.
 
 
-d, i
+* d, i
 
 The *int* argument is converted to signed decimal notation.
 
 
-o, u, x, X
+* o, u, x, X
 
 The *unsigned int* argument is converted to
 unsigned octal(o),
@@ -174,7 +174,7 @@ unsigned decimal(u), or
 unsigned hexadecimal (x and X) notation.
 
 
-e, E
+* e, E
 
 The *double* argument is rounded and converted in the style
 [-]d.ddde±dd where there is one digit (which is nonzero if the argument is nonzero) before the decimal-point character
@@ -182,58 +182,58 @@ and the number of digits after it is equal to the precision;
 if the precision is missing, it is taken as 6;
 
 
-f, F
+* f, F
 
 The *double* argument is rounded and converted to decimal notation in the style [-]ddd.ddd
 
 
-g, G
+* g, G
 
 The *double* argument is converted in style f or e (or F or E for G conversions).
 
 
-a, A
+* a, A
 
 For a conversion, the *double* argument is converted to hexadecimal notation (using the letters abcdef)
 in the style [-]0xh.hhhhp±d;
 the exponent separator P is used.
 
 
-c
+* c
 
 If no l modifier is present, the *int* argument is converted to an *unsigned char*, and the resulting character is written.
 
 
-s
+* s
 
 If no l modifier is present: the *const char \** argument is expected to be a pointer to an array of character type \* (pointer to a string).
 Characters from the array are written up to (but not including) a terminating null byte ('\0')
 
 
-C
+* C
 
 Don't use.
 
 
-S
+* S
 
 Don't use.
 
 
-p
+* p
 
 The *void \** pointer argument is printed in hexadecimal \*(as if by %#x or %#lx).
 
 
-n
+* n
 
 The number of characters written so far is stored into the integer pointed to by the corresponding argument.
 
 
-m
+* m
 
 
-%
+* %
 
 A '%' is written. No argument is converted.
 
