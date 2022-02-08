@@ -115,28 +115,44 @@ Here, "integer conversion" stands for d, i, o, u, x, or X conversion.
 
 
 hh
+
 *signed char* or *unsigned char*
 
+
 h
+
 *short* or *unsigned short*
 
+
 l
+
 *long* or *unsigned long*
 
+
 ll
+
 *long long* or *unsigned long long*
 
+ 
 q
 
+
 L
+
+ 
 A following a, A, e, E, f, F, g, or G conversion corresponds to a *long double* argument.
+
 
 j
 
+
 z
+
 *size_t* or *ssize_t*
 
+
 Z
+
 
 t
 
@@ -179,7 +195,7 @@ Don't use.
 
 
 p
-The *void * *pointer
+The *void \** pointer
 
 
 n
